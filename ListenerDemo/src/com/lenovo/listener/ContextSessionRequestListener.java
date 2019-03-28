@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSessionListener;
 
 /**
  * Application Lifecycle Listener implementation class ContextSessionRequestListener
- * ×Ô¶¨Òå¼àÌıÆ÷
+ * è‡ªå®šä¹‰ç›‘å¬å™¨aaa
  */
 @WebListener
 public class ContextSessionRequestListener implements HttpSessionListener, ServletContextListener, ServletRequestListener {
@@ -19,18 +19,18 @@ public class ContextSessionRequestListener implements HttpSessionListener, Servl
 	
     public void contextInitialized(ServletContextEvent arg0)  { 
          // TODO Auto-generated method stub
-    	System.out.println("¼àÌıServletContext...´´½¨Content¶ÔÏó£º"+arg0);
+    	System.out.println("ç›‘å¬ServletContext...åˆ›å»ºContentå¯¹è±¡ï¼š"+arg0);
     }
     public void contextDestroyed(ServletContextEvent arg0)  { 
         // TODO Auto-generated method stub
-    	System.out.println("¼àÌıServletContext...Ïú»ÙContent¶ÔÏó£º"+arg0);
+    	System.out.println("ç›‘å¬ServletContext...é”€æ¯Contentå¯¹è±¡ï¼š"+arg0);
    }
 
     /**
      * @see HttpSessionListener#sessionCreated(HttpSessionEvent)
      */
     public void sessionCreated(HttpSessionEvent arg0)  { 
-    	System.out.println("¼àÌıSession...´´½¨Session¶ÔÏó£º"+arg0);
+    	System.out.println("ç›‘å¬Session...åˆ›å»ºSessionå¯¹è±¡ï¼š"+arg0);
     }
     
 	/**
@@ -38,7 +38,7 @@ public class ContextSessionRequestListener implements HttpSessionListener, Servl
      */
     public void sessionDestroyed(HttpSessionEvent arg0)  { 
          // TODO Auto-generated method stub
-    	System.out.println("¼àÌıSession...Ïú»ÙSession¶ÔÏó£º"+arg0);
+    	System.out.println("ç›‘å¬Session...é”€æ¯Sessionå¯¹è±¡ï¼š"+arg0);
     }
 
 	/**
@@ -46,7 +46,7 @@ public class ContextSessionRequestListener implements HttpSessionListener, Servl
      */
     public void requestInitialized(ServletRequestEvent arg0)  { 
          // TODO Auto-generated method stub
-    	System.out.println("¼àÌırequest...´´½¨request¶ÔÏó£º"+arg0);
+    	System.out.println("ç›‘å¬request...åˆ›å»ºrequestå¯¹è±¡ï¼š"+arg0);
     }
     
     /**
@@ -54,7 +54,7 @@ public class ContextSessionRequestListener implements HttpSessionListener, Servl
      */
     public void requestDestroyed(ServletRequestEvent arg0)  { 
          // TODO Auto-generated method stub
-    	System.out.println("¼àÌırequest...Ïú»Ùrequest¶ÔÏó£º"+arg0);
+    	System.out.println("ç›‘å¬request...é”€æ¯requestå¯¹è±¡ï¼š"+arg0);
     }
 
 
