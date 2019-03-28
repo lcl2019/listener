@@ -10,9 +10,8 @@ import javax.servlet.http.HttpSessionListener;
 
 /**
  * Application Lifecycle Listener implementation class ContextSessionRequestListener
- * ¼àÌýÆ÷
+ *
  */
-
 @WebListener
 public class ContextSessionRequestListener implements HttpSessionListener, ServletContextListener, ServletRequestListener {
 	
